@@ -340,7 +340,7 @@ abstract class phpillowDocument
         // Fetch object from database
         $db = $this->getConnection();
         $response = $db->get(
-            $this->getDatabase() . urlencode( $id )
+            $this->getDatabase() . $id
         );
 
         // Check if type of response matches type of class
